@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Lucas Chandra</title>
+    <!-- Tautan ke Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tautan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas untuk latar belakang animasi -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header dan Navigasi -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="nav-brand">LC</a>
+                <div class="nav-links">
+                    <a href="#about">Tentang Saya</a>
+                    <a href="#experience">Pengalaman</a>
+                    <a href="#projects">Proyek</a>
+                    <a href="#skills">Keahlian</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+                <button id="mobile-menu-button" class="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                    </svg>
+                </button>
+            </nav>
+            <!-- Menu untuk perangkat mobile -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#about">Tentang Saya</a>
+                <a href="#experience">Pengalaman</a>
+                <a href="#projects">Proyek</a>
+                <a href="#skills">Keahlian</a>
+                <a href="#contact">Kontak</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <!-- Bagian Hero -->
+        <section id="hero">
+            <h1>Lucas Chandra</h1>
+            <p class="subtitle">Mahasiswa Teknik Informatika & Penggiat Data</p>
+            <p>Spesialisasi dalam ilmu data dengan pengalaman langsung dalam analisis data, machine learning, dan alat big data.</p>
+            <a href="#projects" class="cta-button">Lihat Proyek Saya</a>
+        </section>
+
+        <!-- Bagian Tentang Saya -->
+        <section id="about">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="content-wrapper">
+                <div class="card" style="text-align: center;">
+                    <p style="font-size: 1.125rem; line-height: 1.75;">
+                        Saya adalah mahasiswa tingkat akhir Teknik Informatika di Universitas Brawijaya dengan minat yang kuat pada data dan teknologi. Dengan dasar yang kuat dalam Python, SQL, dan visualisasi data, saya terus meningkatkan keterampilan saya agar selaras dengan tren industri. Saya bersemangat untuk bergabung dengan organisasi yang menghargai inovasi, pembelajaran berkelanjutan, dan pengambilan keputusan berbasis data.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Pengalaman -->
+        <section id="experience">
+            <h2 class="section-title">Pengalaman</h2>
+            <div class="content-wrapper experience-list">
+                <div class="card">
+                    <h3>Machine Learning Engineer Cohort</h3>
+                    <p class="company">DBS Coding Camp 2025 | Feb 2023 - Nov 2023</p>
+                    <ul>
+                        <li>Membangun model machine learning menggunakan Python, Scikit-Learn, TensorFlow, dan Keras.</li>
+                        <li>Mengembangkan proyek analisis sentimen pada ulasan Play Store menggunakan teknik deep learning.</li>
+                        <li>Meningkatkan soft skills melalui sesi bahasa Inggris, pelatihan kerja tim, dan kelas literasi keuangan.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Project-Based Virtual Internship: Data Scientist</h3>
+                    <p class="company">ID/X Partners x Rakamin Academy | Nov 2024 - Des 2024</p>
+                    <ul>
+                        <li>Menguasai alat seperti SQL, Python, dan Machine Learning untuk tantangan data dunia nyata.</li>
+                        <li>Menerjemahkan data kompleks menjadi wawasan dan berkolaborasi dengan tim untuk memberikan solusi.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Project-Based Virtual Internship: Big Data Analytics</h3>
+                    <p class="company">Kimia Farma x Rakamin Academy | Mei 2024 - Nov 2024</p>
+                    <ul>
+                        <li>Menganalisis kinerja bisnis Kimia Farma (2020-2023) menggunakan BigQuery dan Google Looker Studio.</li>
+                        <li>Mengembangkan dasbor interaktif untuk mendukung pengambilan keputusan berbasis data.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Proyek -->
+        <section id="projects">
+            <h2 class="section-title">Proyek Unggulan</h2>
+            <div class="content-wrapper projects-wrapper grid grid-cols-2-md">
+                <div class="card">
+                    <h3>Analisis Sentimen Aplikasi Indodax</h3>
+                    <p>Membangun model analisis sentimen pada ulasan Play Store menggunakan LSTM dan Machine Learning. Melakukan pra-pemrosesan teks, ekstraksi fitur (TF-IDF), dan klasifikasi deep learning.</p>
+                </div>
+                <div class="card">
+                    <h3>Deteksi Penipuan (Fraud Detection)</h3>
+                    <p>Membangun model deteksi penipuan pada data transaksi perbankan menggunakan unsupervised learning (K-Means Clustering) dan rekayasa fitur untuk mengidentifikasi pola transaksi yang mencurigakan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Keahlian -->
+        <section id="skills">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="content-wrapper skills-wrapper grid grid-cols-2-md">
+                <div class="card skills-card">
+                    <h3>Keahlian Teknis</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Analisis Data</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Manajemen Database</span>
+                        <span class="skill-tag">Analisis Statistik</span>
+                        <span class="skill-tag">Visualisasi Data</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+                <div class="card skills-card">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Komunikasi</span>
+                        <span class="skill-tag">Kerja Tim</span>
+                        <span class="skill-tag">Pemecahan Masalah</span>
+                        <span class="skill-tag">Manajemen Waktu</span>
+                        <span class="skill-tag">Berpikir Analitis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Kontak -->
+        <section id="contact">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p>Saya terbuka untuk peluang baru dan kolaborasi. Jangan ragu untuk menghubungi saya.</p>
+            <a href="mailto:lucaschandra18@gmail.com" class="contact-button">
+                lucaschandra18@gmail.com
+            </a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/lucaschandra" target="_blank" rel="noopener noreferrer">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Lucas Chandra. Dibuat dengan ❤️ dan ☕.</p>
+        </div>
+    </footer>
+
+    <!-- Tautan ke file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
